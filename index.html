@@ -42,8 +42,15 @@
       </section>
         <h2>Cat Form</h2><!--Seccion de formulario-->
         <form action="https://freecatphotoapp.com/submit-cat-photo"></form> <!--indica donde los datos deberan de ser enviados-->
-        <label for=""><input type="radio" id="indoor" name="indoor-outdoor">Indoor</label>
-        <label for=""><input type="radio" id="Outdoor" name="indoor-outdoor">Outdoor</label>
+          <fieldset><!--para agrupar entradas y etiquetas relacionadas en un formuladio web-->
+            <legend>Is your cat an indoor or outdoor cat?</legend> <!--Un titulo para el contenido del elemento fieldset-->
+            <label for=""><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+            <label for=""><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+          </fieldset>
+          <fieldset>
+            <legend>What´s your cat´s personality?</legend>
+            <input type="checkbox" name="" id="loving">Loving
+          </fieldset>
         <input type="text" name="catphototourl" placeholder="cat photo URL" required>
         <section>
       </section>

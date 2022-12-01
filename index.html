@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CatPhotoApp</title>
 </head>
 <body>
     <html>
@@ -44,18 +44,21 @@
         <form action="https://freecatphotoapp.com/submit-cat-photo"></form> <!--indica donde los datos deberan de ser enviados-->
           <fieldset><!--para agrupar entradas y etiquetas relacionadas en un formuladio web-->
             <legend>Is your cat an indoor or outdoor cat?</legend> <!--Un titulo para el contenido del elemento fieldset-->
-            <label for=""><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+            <label for=""><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor</label> <!--el atributo checked maraca el elemento por defecto-->
             <label for=""><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
           </fieldset>
           <fieldset>
             <legend>What´s your cat´s personality?</legend>
-            <input type="checkbox" name="personality" id="loving"><label for="loving">Loving</label> <!--es una etiqueta que puede asocia el texto de un elemento con el input -->
-            <input type="checkbox" name="personality" id="lazy"><label for="lazy">Loving</label> 
-            <input type="checkbox" name="personality" id="energetic"><label for="energetic">Energetic</label> 
+            <input type="checkbox" name="personality" id="loving" value="loving"><label for="loving">Loving</label> <!--es una etiqueta que puede asocia el texto de un elemento con el input -->
+            <input type="checkbox" name="personality" id="lazy" value="lazy"><label for="lazy">Loving</label> 
+            <input type="checkbox" name="personality" id="energetic" value="energetic"><label for="energetic">Energetic</label> 
           </fieldset>
         <input type="text" name="catphototourl" placeholder="cat photo URL" required>
         <section>
       </section>
     </main>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
 </body>
 </html>
